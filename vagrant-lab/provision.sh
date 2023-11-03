@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-echo "Installing Apache and setting it up..."
+echo "Instalando o Apache e configurando..."
 sudo yum -y update kernel
 yum install -y httpd >/dev/null 2>&1
-cp -r /vagrant/html/* /var/www/html/
+cp -R /vagrant/html/* /var/www/html/
 service httpd start
